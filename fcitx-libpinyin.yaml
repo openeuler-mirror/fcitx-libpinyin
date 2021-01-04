@@ -1,0 +1,3 @@
+version_control: github
+src_repo: fcitx/fcitx-libpinyin
+seperator: .
