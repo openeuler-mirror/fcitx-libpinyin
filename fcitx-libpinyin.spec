@@ -1,6 +1,6 @@
 Name:		fcitx-libpinyin
 Version:	0.5.3
-Release:	12
+Release:	13
 Summary:	Libpinyin Wrapper for Fcitx
 License:	GPLv2+
 URL:		https://fcitx-im.org/wiki/Libpinyin
@@ -14,7 +14,7 @@ BuildRequires:	qt5-qtwebengine-devel, dbus-devel
 BuildRequires:	fcitx-qt5-devel >= 1.1
 Requires:	fcitx
 # handled by qt5-srpm-macros, which defines %%qt5_qtwebengine_arches
-ExclusiveArch: %{qt5_qtwebengine_arches}
+# ExclusiveArch: %{qt5_qtwebengine_arches}
 
 %description
 Fcitx-libpinyin is a libpinyin Wrapper for Fcitx.
@@ -53,6 +53,9 @@ popd
 %{_datadir}/icons/hicolor/48x48/status/fcitx-*.png
 
 %changelog
+* Tue Dec 21 2021 tanyulong <tanyulong@kylinos.cn> - 0.5.3-13
+- remove  ExclusiveArch macro 
+
 * Fri Sep 18 2020 Luke Yue <lukedyue@gmail.com> - 0.5.3-12
 - Adapt for openEuler
 
